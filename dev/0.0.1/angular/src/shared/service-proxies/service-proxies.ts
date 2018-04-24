@@ -505,6 +505,7 @@ export class UploadFileServiceProxy {
     }
 
     /**
+<<<<<<< HEAD
      * @file (optional) 
      * @return Success
      */
@@ -512,6 +513,18 @@ export class UploadFileServiceProxy {
         let url_ = this.baseUrl + "/UploadFiles?";
         if (file !== undefined)
             url_ += "file=" + encodeURIComponent("" + file) + "&"; 
+=======
+     * @files (optional) 
+     * @return Success
+     */
+    uploadFiles(files: any[]): Observable<void> {
+        let url_ = this.baseUrl + "UploadFiles";
+        if (files !== undefined)
+            files && files.forEach((item, index) => { 
+                for (let attr in item)
+                    url_ += "files[" + index + "]." + attr + "=" + encodeURIComponent("" + item[attr]) + "&";
+            });
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
         url_ = url_.replace(/[?&]$/, "");
 
         let options_ : any = {

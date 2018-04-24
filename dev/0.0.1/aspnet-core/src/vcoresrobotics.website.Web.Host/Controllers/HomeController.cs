@@ -8,6 +8,7 @@ using System;
 using System.Threading.Tasks;
 using vcoresrobotics.website.Controllers;
 using Microsoft.AspNetCore.Http;
+<<<<<<< HEAD
 using vcoresrobotics.website.Utility.FroalaEditor;
 using System.Web.Http;
 using System.Net.Http;
@@ -16,6 +17,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Collections;
 using System.Linq;
+=======
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
 
 namespace vcoresrobotics.website.Web.Host.Controllers
 {
@@ -61,6 +64,7 @@ namespace vcoresrobotics.website.Web.Host.Controllers
             return Content("Sent notification: " + message);
         }
 
+<<<<<<< HEAD
         
         [Microsoft.AspNetCore.Mvc.HttpPost("UploadFiles")]
         [AllowAnonymous]
@@ -75,17 +79,38 @@ namespace vcoresrobotics.website.Web.Host.Controllers
             try
             {
                 return Json(Utility.FroalaEditor.Image.Upload(HttpContext, fileRoute));
+=======
+        [HttpPost("UploadFiles")]
+        public ActionResult UploadImage()
+        {
+            string uploadPath = "/Public/";
+
+
+            try
+            {
+                return Json(vcoresrobotics.website.Utility.FroalaEditor.Image.Upload(HttpContext, uploadPath));
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
             }
             catch (Exception e)
             {
                 return Json(e);
             }
         }
+<<<<<<< HEAD
         
 /*
         [Microsoft.AspNetCore.Mvc.HttpPost("UploadFiles")]
         [AllowAnonymous]
         public async Task<IActionResult> UploadImage(IFormFile file)
+=======
+
+        /*
+
+        [EnableCors("localhost")]
+        [HttpPost("UploadFiles")]
+        [Produces("application/json")]
+        public async Task<IActionResult> Post(List<IFormFile> files)
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
         {
             // Get the file from the POST request
             var theFile = HttpContext.Request.Form.Files.GetFile("file");
@@ -134,6 +159,7 @@ namespace vcoresrobotics.website.Web.Host.Controllers
                         writerFileStream.Dispose();
                     }
 
+<<<<<<< HEAD
                     /*
                     // Return the file path as json
                     Hashtable imageUrl = new Hashtable();
@@ -141,6 +167,13 @@ namespace vcoresrobotics.website.Web.Host.Controllers
  
 
                     return Json(new { link = link.Replace("wwwroot/", "") });
+=======
+                    // Return the file path as json
+                    Hashtable imageUrl = new Hashtable();
+                    imageUrl.Add("link", "/uploads/" + name);
+
+                    return Json(imageUrl);
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
                 }
                 throw new ArgumentException("The image did not pass the validation");
             }
@@ -150,6 +183,7 @@ namespace vcoresrobotics.website.Web.Host.Controllers
                 return Json(ex.Message);
             }
         }
+<<<<<<< HEAD
        */
         /*
         [Microsoft.AspNetCore.Mvc.HttpPost("UploadFiles")]
@@ -177,5 +211,8 @@ namespace vcoresrobotics.website.Web.Host.Controllers
             return Ok(new { count = files.Count, size, filePath });
         }
          */
+=======
+        */
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
     }
 }

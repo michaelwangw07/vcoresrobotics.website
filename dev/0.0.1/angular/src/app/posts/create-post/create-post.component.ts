@@ -32,12 +32,17 @@ export class CreatePostComponent extends AppComponentBase implements OnInit{
         charCounterCount: true,
         language: "zh_cn", 
         // Set the image upload parameter.
+<<<<<<< HEAD
         imageUploadParam: 'file',
+=======
+        imageUploadParam: 'image_param',
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
  
         // Set the image upload URL.
         imageUploadURL: 'http://localhost:21021/UploadFiles',
  
         // Additional upload params.
+<<<<<<< HEAD
         imageUploadParams: {type: 'file',name:'files', enctype:'multipart/form-data'},
  
         // Set request type.
@@ -48,6 +53,18 @@ export class CreatePostComponent extends AppComponentBase implements OnInit{
         imageMaxSize: 5 * 4096 * 3280,
  
         // Allow to upload PNG and JPG.
+=======
+        imageUploadParams: {id: 'my_editor'},
+ 
+        // Set request type.
+        imageUploadMethod: 'POST',
+ 
+        // Set max image size to 5MB.
+        imageMaxSize: 5 * 1024 * 1024,
+ 
+        // Allow to upload PNG and JPG.
+        imageAllowedTypes: ['jpeg', 'jpg', 'png']
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
  
       };
 

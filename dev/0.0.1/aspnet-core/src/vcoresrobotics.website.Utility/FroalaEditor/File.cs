@@ -39,9 +39,12 @@ namespace vcoresrobotics.website.Utility.FroalaEditor
         /// <returns>Object with link.</returns>
         public static object Upload(Microsoft.AspNetCore.Http.HttpContext httpContext, string fileRoute, FileOptions options = null)
         {
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
             // Use default file options.
             if (options == null)
             {
@@ -78,6 +81,7 @@ namespace vcoresrobotics.website.Utility.FroalaEditor
             string extension = Utils.GetFileExtension(file.FileName);
             string name = Utils.GenerateUniqueString() + "." + extension;
 
+<<<<<<< HEAD
 
 
 
@@ -85,6 +89,10 @@ namespace vcoresrobotics.website.Utility.FroalaEditor
 
 
 
+=======
+            string link = fileRoute + name; 
+
+>>>>>>> d530ee20498a8b11bec436f022e78efad8da5d85
             // Create directory if it doesn't exist.
             FileInfo dir = new FileInfo(fileRoute);
             dir.Directory.Create();
