@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>vcoresrobotics.website.Core</AssemblyName>
+    <PackageId>vcoresrobotics.website.Core</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <UserSecretsId>vcoresrobotics-website-56C2EF2F-ABD6-4EFC-AAF2-2E81C34E8FB1</UserSecretsId>
+    <RootNamespace>vcoresrobotics.website</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\SourceFiles\website-zh-Hans.xml" />
+    <EmbeddedResource Include="Localization\SourceFiles\website.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Localization\SourceFiles\website-es.xml" />
+    <None Remove="Localization\SourceFiles\website-fr.xml" />
+    <None Remove="Localization\SourceFiles\website-it.xml" />
+    <None Remove="Localization\SourceFiles\website-ja.xml" />
+    <None Remove="Localization\SourceFiles\website-lt.xml" />
+    <None Remove="Localization\SourceFiles\website-nl.xml" />
+    <None Remove="Localization\SourceFiles\website-pt-BR.xml" />
+    <None Remove="Localization\SourceFiles\website-tr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="3.4.0" />
+    <PackageReference Include="Abp.ZeroCore.EntityFrameworkCore" Version="3.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.0" />
+    <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.3.0" />
+  </ItemGroup>
+</Project>

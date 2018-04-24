@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="zh-Hans">
+  <texts>
+    <text name="HomePage" value="主页" />
+    <text name="About" value="关于我们" />
+    <text name="WellcomeMessage" value="欢迎使用 website!" />
+    
+    <text name="FormIsNotValidMessage" value="部分输入信息不符合要求，请检查并改正.." />
+    <text name="TenantNameCanNotBeEmpty" value="租户名不能为空" />
+
+    <text name="InvalidUserNameOrPassword" value="用户名或密码无效" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="租户 {0}不存在" />
+    <text name="TenantIsNotActive" value="租户 {0} 未激活." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="用户 {0} 未激活，不能登录." />
+    <text name="PleaseEnterLoginInformation" value="请输入登录信息" />
+    <text name="TenancyName" value="租户名称" />
+    <text name="UserNameOrEmail" value="用户名或邮箱地址" />
+    <text name="Password" value="密码" />
+    <text name="RememberMe" value="记住我" />
+    <text name="LogIn" value="登录" />
+
+    <text name="LoginFailed" value="登录失败!" />
+
+    <text name="Users" value="用户" />
+    <text name="IsActive" value="使用中" />
+    <text name="FullName" value="全名" />
+    <text name="CreateNewUser" value="创建新用户" />
+    <text name="Yes" value="是" />
+    <text name="No" value="否" />
+    <text name="Optional" value="可选" />
+
+
+
+
+    <text name="NotSelected">没选中</text>
+    <text name="Change">重置</text>
+
+    <text name="MultiLevelMenu">多级菜单</text>
+    <text name="Back">后退</text>
+    <text name="SuccessfullyRegistered">注册成功</text>
+    <text name="WaitingForEmailActivation">Your email address should be activated</text>
+    <text name="Roles">角色</text>
+    <text name="DisplayName">显示名称</text>
+
+
+    <text name="CreateNewRole">创建新角色</text>
+    <text name="RoleName">角色名称</text>
+    <text name="Actions">操作</text>
+
+    <text name="CouldNotCompleteLoginOperation">暂时无法为您提供登录服务，请稍后再试。</text>
+
+    <text name="EditRole">编辑角色</text>
+
+    <text name="EditUser">编辑用户</text>
+
+    <text name="Edit" value="编辑" />
+    <text name="Delete" value="删除" />
+    
+    <text name="Name" value="用户名称"/>
+    <text name="Surname" value="姓"/>
+    <text name="Events" value="活动|事件" />
+    <text name="RegisterEvent" value="报名" />
+    <text name="NewEvent" value="新的活动事件" />
+    <text name="ShowCancelledEvents" value="显示已取消的活动" />
+    <text name="ThisEventIsCanceled" value="这项活动已经取消" />
+    <text name="Details" value="详情" />
+    <text name="XofYregistered" value="{0} of {1} 已注册" />
+    <text name="XregisteredNoNewRegistrationAvailable" value="{0} 已注册. 注册已关闭." />
+    <text name="XregisteredUnlimitedRegistrations" value="{0} 已注册. 注册数量无限制." />
+    <text name="BackToEvents" value="退回到活动主页" />
+    <text name="CancelRegistration" value="取消报名" />
+    <text name="CancelTheEvent" value="取消活动" />
+    <text name="XregisteredOfYAvailableRegistration" value="{0} 位用户已注册 (共 {1} 位用户可注册)" />
+    <text name="Title" value="主题" />
+    <text name="Description" value="内容描述" />
+    <text name="Date" value="日期" />
+    <text name="MaxRegistrationCount" value="最大可注册用户数" />
+    <text name="Unlimited" value="无限制" />
+ 
+    <text name="Links" value="链接" />
+    <text name="Cancel" value="取消"/>
+    <text name="Save" value="保存"/>
+    <text name="CreateNewEvent" value="创建新的活动|事件"/>
+    <text name="CreationTime" value="报名时间" />
+
+
+  </texts>
+</localizationDictionary>
